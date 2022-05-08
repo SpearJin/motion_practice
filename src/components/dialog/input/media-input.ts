@@ -14,7 +14,7 @@ export class MediaSectionInput
         </div>
         <div class="from__container">
           <label for="url">URL</label>
-          <input type="text id="url"/>
+          <input type="text" id="url"/>
         </div>
       </div>
     `);
@@ -26,6 +26,7 @@ export class MediaSectionInput
   }
   get url(): string {
     const element = this.element.querySelector('#url')! as HTMLInputElement;
+    console.log(this.element);
     return element.value;
   }
 }
